@@ -1,44 +1,79 @@
-# Binary-Decimal-Convertor-in-Python
-This Python application creates a simple GUI interface using Tkinter for converting numbers between decimal and binary systems.
+# 🔁 Binary–Decimal Converter in Python (Tkinter GUI)
 
-Application functionality:
+This Python application provides a simple graphical interface using **Tkinter** that allows users to convert numbers between **decimal** and **binary** systems.
 
-• Decimal to binary conversion:
+It is designed to be beginner-friendly, efficient, and lightweight.
 
-The user enters a decimal number in the input field.
+---
 
-Pressing the "Decimal to Binary" button converts the number to binary and displays the result.
+## 🧠 Features
 
-• Binary to decimal conversion:
+### 🔹 Decimal to Binary
+✅ Enter a **decimal number** in the input field
 
-The user enters a binary number in the input field.
+✅ Click **"Decimal to Binary"**
 
-Pressing the "Binary to Decimal" button converts the number to decimal and displays the result.
+✅ The app converts the value to binary and displays the result
 
-• Deleting displayed results:
+### 🔹 Binary to Decimal
+✅ Enter a **binary number** (e.g., `1010`)
 
-Pressing the Clear button clears the contents displayed in the output label.
+✅ Click **"Binary to Decimal"**
 
-• Graphical User Interface (GUI):
+✅ The app converts it to decimal and displays the result
 
-The application has an input_field.
+### 🔹 Clear Output
+- Click the **"Clear"** button to remove any displayed results
 
-Three functional buttons for conversion and clear (Decimal to Binary, Binary to Decimal, Clear).
+### 🔹 GUI Layout
+- Input field (`Entry`) for user input
+- Result label (`Label`) for showing conversions
+- Three buttons:
+  - **Decimal to Binary**
+  - **Binary to Decimal**
+  - **Clear**
+- An additional **"Convert"** button is present but currently inactive
 
-A label to display the results (output_label).
+---
 
-A Convert button which currently has no functionality.
+## ⚙️ How It Works
 
-• Error handling:
+- `decimal_to_binary()`  
+  Converts decimal input to binary using Python's built-in `bin()` function
 
-If the user enters an invalid number (e.g. letters instead of digits), the application displays an error message.
+- `binary_to_decimal()`  
+  Converts binary input to decimal using `int(binary, 2)`
 
-• How does the code work?
+- `clear_output()`  
+  Resets the result label to an empty string
 
-Function decimal_to_binary(): transforms a decimal number entered by the user to a binary number.
+- **Error Handling**  
+  Displays an appropriate error message if the input is invalid (e.g., contains letters)
 
-Function binary_to_decimal(): Converts a user-entered binary number to a decimal number.
+---
 
-Function clear_output(): Clears the text displayed in the output label.
+## ▶️ How to Run
 
-Tkinter interface: Creates windows, buttons and text fields for user interaction.
+1. Make sure you have **Python 3** installed
+2. Save the file as `binary-decimal_convertor.py`
+3. Run it using:
+
+```bash
+python binary-decimal_convertor.py
+```
+
+---
+## 💡 Future Improvements
+Enable the Convert button to detect input type automatically
+
+Add better input validation (only digits, max length, etc.)
+
+Enhance the GUI design (colors, layout, fonts)
+
+Add conversion history
+
+---
+
+👨‍💻 Author
+Created by CristiC7
+A beginner-friendly utility tool built with love for Python and user-friendly design.
