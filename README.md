@@ -74,6 +74,7 @@ Add conversion history
 
 ---
 
-👨‍💻 Author
+## 👨‍💻 Author
 Created by CristiC7
+
 A beginner-friendly utility tool built with love for Python and user-friendly design.
